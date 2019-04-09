@@ -63,6 +63,7 @@ def merge_data(hash, to_merge)
       hash.each do |info|
         #binding.pry
         if info[:first_name] == name
+          binding.pry
           info << data
         end
       end
