@@ -86,7 +86,7 @@ def find_cool(hash)
 end
 
 def organize_schools(hash)
-  new_hash = {}
+  new_hash = {{}}
   hash.each do |school, info|
     info.each do |key, location|
       new_hash[location] = []
@@ -97,7 +97,7 @@ def organize_schools(hash)
       new_hash[location] << school
     end
   end
-  return_hash = {new_hash}
+  new_hash
 end
     
       
