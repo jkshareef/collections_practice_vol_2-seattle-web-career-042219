@@ -72,15 +72,17 @@ def merge_data(hash, to_merge)
 end
     
 def find_cool(hash)
+  array = Array.new
   hash.each do |nested|
     nested.each do |key, value|
       if key == :temperature
         if value == "cool"
-          return nested
+          array.push(nested)
         end
       end
     end
   end
+  array
 end
 
     
