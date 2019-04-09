@@ -72,8 +72,15 @@ def merge_data(hash, to_merge)
 end
     
 def find_cool(hash)
-  hash.collect do |nest|
-    nest.each
+  hash.each do |nested|
+    nested.each do |key, value|
+      if key == :temperature
+        if value == "cool"
+          nested
+        end
+      end
+    end
+  end
 end
 
     
