@@ -56,8 +56,8 @@ def count_elements(array)
   new_array
 end
 
-def merge_data(a_hash, b_hash)
-  b_hash.each do |group, name|
+def merge_data(hash, to_merge)
+  to_merge.each do |group, name|
     binding.pry
     name.each do |data|
       binding.pry
