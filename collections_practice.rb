@@ -60,7 +60,12 @@ def merge_data(a_hash, b_hash)
   a_hash.collect do |name, data|
     b_hash.collect do |hash|
       if hash[:first_name] == name
-        hash.delete
+        hash.delete(:first_name)
+        name << hash
+      end
+    end
+  end
+  a_hash
 end
     
     
