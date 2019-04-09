@@ -59,9 +59,9 @@ end
 def merge_data(hash, to_merge)
   to_merge.each do |group|
     group.each do |name, data|
-      binding.pry
+      #binding.pry
       hash.each do |info|
-        binding.pry
+        #binding.pry
         if info[:first_name] == name
           info << data
         end
