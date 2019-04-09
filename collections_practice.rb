@@ -58,6 +58,7 @@ end
 
 def merge_data(a_hash, b_hash)
   b_hash.each do |group, name|
+    binding.pry
     name.each do |data|
       binding.pry
       a_hash.each do |hash|
