@@ -64,7 +64,7 @@ def merge_data(hash, to_merge)
         #binding.pry
         if info[:first_name] == name
           binding.pry
-          name << data
+          info << data
         end
       end
     end
