@@ -61,7 +61,7 @@ def merge_data(hash, to_merge)
     binding.pry
     name.each do |data|
       binding.pry
-      a_hash.each do |hash|
+      hash.each do |data_merge|
         binding.pry
         if hash[:first_name] == name
           hash << data
