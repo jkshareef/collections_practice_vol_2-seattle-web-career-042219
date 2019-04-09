@@ -71,7 +71,9 @@ def merge_data(hash, to_merge)
   hash
 end
     
-    
+def find_cool
+end
+
     
       
       
