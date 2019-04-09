@@ -97,6 +97,7 @@ def organize_schools(hash)
       new_hash[location] << school
     end
   end
+  return_hash = {new_hash}
 end
     
       
