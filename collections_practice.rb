@@ -64,6 +64,7 @@ def merge_data(a_hash, b_hash)
       end
     end
   end
+  a_hash
 end
     
     
