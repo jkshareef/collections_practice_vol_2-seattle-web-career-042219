@@ -57,14 +57,13 @@ def count_elements(array)
 end
 
 def merge_data(hash, to_merge)
-  to_merge.each do |group, info|
-    binding.pry
-    info.each do |data|
+  to_merge.each do |group|
+    group.each do |name, data|
       binding.pry
-      hash.each do |target|
+      hash.each do |info|
         binding.pry
-        if target[:first_name] == 
-          hash << data
+        if info[:first_name] == name
+          info << data
         end
       end
     end
