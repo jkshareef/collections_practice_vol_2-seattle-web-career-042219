@@ -59,6 +59,7 @@ end
 def merge_data(a_hash, b_hash)
   b_hash.each do |group, name|
     name.each do |data|
+      binding.pry
       a_hash.each do |hash|
         binding.pry
         if hash[:first_name] == name
