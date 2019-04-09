@@ -76,7 +76,7 @@ def find_cool(hash)
     nested.each do |key, value|
       if key == :temperature
         if value == "cool"
-          nested
+          return nested
         end
       end
     end
