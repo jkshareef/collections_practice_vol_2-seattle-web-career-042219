@@ -71,7 +71,9 @@ def merge_data(hash, to_merge)
   hash
 end
     
-def find_cool
+def find_cool(hash)
+  hash.collect do |nest|
+    nest.each
 end
 
     
