@@ -57,6 +57,10 @@ def count_elements(array)
 end
 
 def merge_data(a_hash, b_hash)
+  a_hash.collect do |name, data|
+    b_hash.collect do |hash|
+      if hash[:first_name] == name
+        name << hash
 end
     
     
