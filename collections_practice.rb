@@ -60,8 +60,8 @@ def merge_data(a_hash, b_hash)
   b_hash.each do |group, name|
     name.each do |data|
       a_hash.each do |hash|
+        binding.pry
         if hash[:first_name] == name
-          binding.pry
           hash << data
         end
       end
